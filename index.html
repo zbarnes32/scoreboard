@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-image">
+    <header class="container p-3 text-center">
+        <h1 class="">Ping Pong Scoreboard</h1> 
+    </header>
+
+    <main>
+        <section class="container teams">
+            <div class="row">
+                <div class="col-6">
+                    <p class="d-flex fs-1">Team <input class="team-name" type="text" placeholder="Home"></p>
+                </div>
+                <div class="col-6">
+                        <p class="d-flex fs-1">Team <input class="team-name" type="text" placeholder="Away"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-6">
+                    <span id="homeScore"></span>
+                </div>
+                <div class="col-6">
+                    <span id="awayScore"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-6 scoreboard-btns">
+                    <button class="p-2 rounded bg-success score-button" onclick="addHomeScoreByOne()">+ 1</button>
+                    <button class="p-2 rounded bg-danger score-button" onclick="subtractHomeScoreByOne()">- 1</button>
+                </div>
+                <div class="col-6 scoreboard-btns">
+                    <button class="p-2 rounded bg-success score-button" onclick="addAwayScoreByOne()">+ 1</button>
+                    <button class="p-2 rounded bg-danger score-button" onclick="subtractAwayScoreByOne()">- 1</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+    <footer>
+
+    </footer>
+</html>
